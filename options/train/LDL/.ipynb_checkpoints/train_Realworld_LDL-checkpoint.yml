@@ -36,10 +36,10 @@ queue_size: 180
 # dataset and data loader settings
 datasets:
   train:
-    name: Flickr1024
+    name: DF2K+OST
     type: RealESRGANDataset
-    dataroot_gt: datasets/flickr1024/train/HR
-    meta_info: datasets/flickr1024/train/HR_sub.txt
+    dataroot_gt: datasets/DF2K/DF2K_multiscaleHR_sub
+    meta_info: datasets/DF2K/DF2K_multiscaleHR_OST_sub.txt
     io_backend:
       type: disk
 
@@ -73,9 +73,9 @@ datasets:
     prefetch_mode: ~
 
   val:
-    name: Flickr1024
+    name: RealWorld38
     type: SingleImageDataset
-    dataroot_lq: datasets/flickr1024/valid/HR
+    dataroot_lq: datasets/RealWorld38/LR
     io_backend:
       type: disk
 
@@ -98,7 +98,7 @@ network_d:
 # path
 path:
   # use the pre-trained Real-ESRNet model
-  pretrain_network_g: experiments/pretrained_models/net_g_RealESRGAN+LDL.pth
+  pretrain_network_g: experiments/pretrained_models/RealESRGAN/RealESRNet_x4plus.pth
   param_key_g: params_ema
   strict_load_g: true
   resume_state: ~
