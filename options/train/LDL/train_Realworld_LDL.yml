@@ -36,9 +36,9 @@ queue_size: 180
 # dataset and data loader settings
 datasets:
   train:
-    name: DF2K+OST
+    name: Flickr1024
     type: RealESRGANDataset
-    dataroot_gt: datasets/DF2K/DF2K_multiscaleHR_sub
+    dataroot_gt: datasets/flickr1024/train/HR
     meta_info: datasets/DF2K/DF2K_multiscaleHR_OST_sub.txt
     io_backend:
       type: disk

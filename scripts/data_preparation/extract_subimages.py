@@ -43,21 +43,21 @@ def main():
     opt['n_thread'] = 20
     opt['compression_level'] = 3
 
-    # # HR images
-    # opt['input_folder'] = 'datasets/DIV2K/DIV2K_HR'
-    # opt['save_folder'] = 'datasets/DIV2K/DIV2K_HR_sub'
-    # opt['crop_size'] = 480
-    # opt['step'] = 240
-    # opt['thresh_size'] = 0
-    # extract_subimages(opt)
+    # HR images
+    opt['input_folder'] = 'datasets/flickr1024/train/HR'
+    opt['save_folder'] = 'datasets/flickr1024/train/HR_sub'
+    opt['crop_size'] = 480
+    opt['step'] = 240
+    opt['thresh_size'] = 0
+    extract_subimages(opt)
 
-    # # LRx4 images
-    # opt['input_folder'] = 'datasets/DIV2K/DIV2K_train_LR_bicubic/X4'
-    # opt['save_folder'] = 'datasets/DIV2K/DIV2K_train_LR_bicubic/X4_sub'
-    # opt['crop_size'] = 120
-    # opt['step'] = 60
-    # opt['thresh_size'] = 0
-    # extract_subimages(opt)
+    # LRx4 images
+    opt['input_folder'] = 'datasets/flickr1024/train/LR_x4'
+    opt['save_folder'] = 'datasets/flickr1024/train/LR_x4_sub'
+    opt['crop_size'] = 120
+    opt['step'] = 60
+    opt['thresh_size'] = 0
+    extract_subimages(opt)
 
 
 def extract_subimages(opt):
