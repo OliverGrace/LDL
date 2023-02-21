@@ -38,7 +38,7 @@ datasets:
   train:
     name: Flickr1024
     type: RealESRGANDataset
-    dataroot_gt: datasets/flickr1024/train/HR
+    dataroot_gt: datasets/flickr1024/train/HR_sub
     meta_info: datasets/flickr1024/train/HR_sub.txt
     io_backend:
       type: disk
@@ -75,7 +75,7 @@ datasets:
   val:
     name: Flickr1024
     type: SingleImageDataset
-    dataroot_lq: datasets/flickr1024/valid/HR
+    dataroot_lq: datasets/flickr1024/valid/LR_x4
     io_backend:
       type: disk
 
